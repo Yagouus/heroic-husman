@@ -1,0 +1,90 @@
+.title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.subtitle{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.wrapper {
+    height: 80vh;
+}
+
+.loading {
+    height: 100vh;
+    width: 100vw;
+}
+
+.sideright {
+    height: 100vh;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.blur {
+    background-color: rgba(40, 45, 45, 0.6) !important;
+}
+
+.parallax-container {
+    height: 100vh;
+}
+
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
+
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(15px);
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.pinned {
+    background-color: rgba(40, 45, 45, 1) !important;
+}
+
+.pin-top {
+    font-size:2em;
+}
+
+#mynetwork {
+
+    height: 600px;
+}
+
+.resultModal{
+    height:60vh;
+}
+
+iframe{
+    height: 58vh;
+}
+
+.text-big{
+    font-size:1.2em;
+}
+
+.text-small{
+    font-size: 0.8em;
+}
+
+.cont{
+    height: 100%;
+    width: 100%;
+}

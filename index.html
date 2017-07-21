@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="project" ng-controller="indexCtrl" lang="en">
+<head>
+
+    <base href="">
+    <meta charset="UTF-8">
+    <title>Crossfit Hird</title>
+
+    <!--Compiled and minified AngularJS-->
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/ng-file-upload.min.js"></script>
+    <script src="vendor/angular-route.js"></script>
+
+    <!--App-->
+    <script src="scripts/app.js"></script>
+
+    <!--Controllers-->
+    <script src="scripts/controllers/indexCtrl.js"></script>
+    <script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/controllers/navbarCtrl.js"></script>
+
+    <!--Services-->
+    <script src="scripts/services/restService.js"></script>
+
+    <!--Directives-->
+    <script src="scripts/directives/fileModel.js"></script>
+
+
+    <!--Materialize-->
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/materialize.js"></script>
+
+    <!--Styles-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/materialize.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/spinner.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--Sweet alerts-->
+    <script src="node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
+
+
+</head>
+<body>
+
+
+<!--Main div-->
+<div ng-view >
+
+</div>
+
+</body>
+</html>
