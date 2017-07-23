@@ -177,6 +177,9 @@
                                     <a href="#">This is a link</a>
                                     <a href="#">This is a link</a>
                                 </div>
+                                <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                                    <i class="material-icons">add</i>
+                                </a>
                             </div>
                         </div>
 
@@ -191,6 +194,9 @@
                                     <a href="#">This is a link</a>
                                     <a href="#">This is a link</a>
                                 </div>
+                                <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                                    <i class="material-icons">add</i>
+                                </a>
                             </div>
                         </div>
 
@@ -205,6 +211,9 @@
                                     <a href="#">This is a link</a>
                                     <a href="#">This is a link</a>
                                 </div>
+                                <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                                    <i class="material-icons">add</i>
+                                </a>
                             </div>
                         </div>
 
@@ -234,29 +243,25 @@
 
                     <div class="col s12 l4">
                         <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Horario: </h5>
-                        <p>Verano y Semana Santa:</p>
                         <p class="light">Lunes a sábado 9:30 - 14:30 y 16:30 - 22:00 </p>
                         <p class="light">Domingos y festivos 10:00 - 14:00 y 17:00 - 21:00 </p>
-                        <br>
-                        <p>Invierno:</p>
-                        <p class="light">Lunes a sábado 9:30 - 14:30 y 16:30 - 22:00 </p>
-                        <p class="light">Domingos cerrado</p>
                         <br/>
                     </div>
 
-                    <div class="col s12 l4">
+                    <div class="col s12 l2">
                         <h5><i class="fa fa-phone" aria-hidden="true"></i> Telefono: </h5>
-                        <p class="light"><a href="tel:986691002">986 691 002</a></p>
-                        <br/>
+                        <p class="light"><a href="tel:699016409">699 016 409</a></p>
+                    </div>
 
+                    <div class="col s12 l2">
                         <h5><i class="fa fa-envelope" aria-hidden="true"></i> Email: </h5>
-                        <p class="light"><a href="mailto:antomenfarma@hotmail.com">antomenfarma@hotmail.com</a></p>
+                        <p class="light"><a href="mailto:info@crossfithird.com">info@crossfithird.com</a></p>
                     </div>
 
                     <div class="col s12 l4">
                         <h5><i class="fa fa-location-arrow" aria-hidden="true"></i> Direccion: </h5>
-                        <p class="light">Carretera de la Lanzada, 28 - mercado Portonovo
-                            36970 PORTONOVO, SANXENXO (Pontevedra)</p>
+                        <p class="light">Calle República Checa Nº7
+                            15707 Santiago de Compostela</p>
                         <br/>
                     </div>
 
@@ -308,8 +313,8 @@
         <div class="row center" id="ubicacion">
             <div class="col s12">
                 <h3> ¿Dónde estamos? </h3>
-                <p>Carretera de la Lanzada, 28 - mercado Portonovo
-                    36970 PORTONOVO, SANXENXO (Pontevedra)</p>
+                <p>Calle República Checa Nº7
+                    15707 Santiago de Compostela</p>
             </div>
         </div>
 
@@ -323,7 +328,9 @@
 
 <!--Map-->
 <div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE">
-    <ng-map id="map" center="41,-87" zoom="9"></ng-map>
+    <ng-map id="map" center="42.905784, -8.505412" zoom="15">
+        <marker position="42.905784, -8.505412"></marker>
+    </ng-map>
 </div>
 
 
