@@ -1,18 +1,23 @@
 <!--Title div-->
-<div class="parallax-container blur">
+<div class="parallax-container top-container blur">
 
     <!--Include navbar-->
     <ng-include src="'views/navbar.html'"></ng-include>
 
 
     <!--Parallax image-->
-    <div class="parallax "><img src="img/lib.jpg"></div>
+    <div class="parallax ">
+        <img src="http://unsplash.com/photos/5IsdIqwwNP4/download?force=true">
+        <canvas id="net"></canvas>
+    </div>
+
 
     <!--Main title-->
     <div id="main" class="wrapper valign-wrapper">
 
         <!--Main-->
-        <div ng-hide="processing" class="container">
+        <div class="container">
+
 
             <!--Logo-->
             <div class="row">
@@ -41,125 +46,294 @@
 </div>
 
 <!--Content divs-->
-<div class="container">
 
-    <!--About-->
-    <div class="section white">
-        <div class="row">
-            <div class="col s8 offset-s2">
+<div class="section white">
+    <div class="container">
 
-                <h3 class="header center">About</h3>
+        <!--About-->
+        <div class="section white">
+            <div class="row">
+                <div class="col s8 offset-s2">
 
-                <p class="grey-text text-darken-2 text-big">SenSiMet main goal is to create a software platform able to
-                    estimate the resemblance between two sentences and dynamically generate a graph based on the
-                    relationships between the terms in each sentence. With the use of PLN modules and semantic
-                    information
-                    platforms such as WordNet and BabelNet.
-                </p>
-                <p class="grey-text text-darken-2 text-big">The main objectives of this project are the following: </p>
+                    <br>
+                    <br>
 
-                <ul class="browser-default grey-text text-darken-2 text-big">
-                    <li>Syntactically analyse sentences with PLN methods to identify the POS and type of each term</li>
-                    <li>Automatically disambiguate each term meaning with Babelfy</li>
-                    <li>Apply similarity metrics between the terms of each sentence</li>
-                    <li>Automatically generate a graph based on the relationships between each sentence terms</li>
-                    <li>Develop a REST API that allows anyone to use the developed methods and metrics</li>
-                    <li>Develop a user-friendly interface with added information to further teach the user</li>
-                </ul>
+                    <h3 class="header center cross">CrossFit</h3>
+
+                    <p class="grey-text text-darken-2 text-big">SenSiMet main goal is to create a software platform able
+                        to
+                        estimate the resemblance between two sentences and dynamically generate a graph based on the
+                        relationships between the terms in each sentence. With the use of PLN modules and semantic
+                        information
+                        platforms such as WordNet and BabelNet.
+                    </p>
+                    <p class="grey-text text-darken-2 text-big">The main objectives of this project are the
+                        following: </p>
+
+                    <ul class="browser-default grey-text text-darken-2 text-big">
+                        <li>Syntactically analyse sentences with PLN methods to identify the POS and type of each term
+                        </li>
+                        <li>Automatically disambiguate each term meaning with Babelfy</li>
+                        <li>Apply similarity metrics between the terms of each sentence</li>
+                        <li>Automatically generate a graph based on the relationships between each sentence terms</li>
+                        <li>Develop a REST API that allows anyone to use the developed methods and metrics</li>
+                        <li>Develop a user-friendly interface with added information to further teach the user</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+
+        <br>
+        <div class="divider"></div>
+        <br>
+
+        <!--Download-->
+        <div class="section white">
+            <div class="row">
+
+                <h3 class="header center">Nosotros</h3>
+
+                <div class="row">
+                    <div class="col s12 l6">
+                        <br>
+                        <div class="card">
+                            <div class="card-image image">
+                                <img style='height: 100%; width: 100%; object-fit: cover' src="img/david.jpg">
+                                <span class="card-title">David Mata López</span>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    CrossFit Level 2 (CF-L2) .
+                                    I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 l6">
+                        <br>
+                        <div class="card">
+                            <div class="card-image image">
+                                <img style='height: 100%; width: 100%; object-fit: cover' src="img/adri.jpg">
+                                <span class="card-title">Adrián Fossas Moreira</span>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    CrossFit Level 2 (CF-L2) .I am a very simple card. I am good at containing small
+                                    bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row center">
+                    <div class="col s12">
+                        <p>Trabajamos con personal cualificado para ofrecerle un asesoramiento adecuado a sus
+                            necesidades.
+                            Consúltenos, le atenderemos encantados.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
+</div>
 
-    <br>
-    <div class="divider"></div>
-    <br>
-    <!--Download-->
-    <div class="section white">
-        <div class="row">
-
-            <h3 class="header center">Download</h3>
-
-            <div class="col s4 offset-s1">
-                <p class="center"><i class="material-icons large">desktop_mac</i></p>
-                <br>
-                <p class="grey-text text-darken-2">In this repository you'll find just a script that will install all
-                    the dependencies and configure all the properties needed to run SenSiMet on your computer. Just
-                    download and execute the script named launch.sh and watch how a new browser window opens magically
-                    (sprinkles and fairies not included).
-                </p>
-                <br>
-                <h6 class="header center grey-text">SENSIMET FOR</h6>
-                <h5 class="header center">Users</h5>
-
-            </div>
-
-            <div class="col s4 offset-s2">
-                <p class="center"><i class="fa fa-github large" aria-hidden="true"></i></p>
-                <br>
-                <p class="grey-text text-darken-2">In this repository you'll find the source code of the REST API with
-                    all the NLP and disambiguation methods as well as all the implemented metrics and results.
-                    Also there, you'll find a link to the frontend repository where the source code of this same webpage
-                    is stored.
-
-                </p>
-                <br>
-                <h6 class="header center grey-text ">SENSIMET FOR</h6>
-                <h5 class="header center">Developers</h5>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-
-            <div class="col s2 offset-s2 center">
-                <a href="https://github.com/Yagouus/SenSiMet" class="btn-flat">Download <i class="material-icons right">file_download</i>
-                </a>
-            </div>
-
-            <div class="col s2 offset-s4 center">
-                <a href="https://github.com/Yagouus/SenSiMet_Backend" class="btn-flat">Download <i
-                        class="material-icons right">file_download</i> </a>
-            </div>
-
-        </div>
+<!--Title div-->
+<div class="parallax-container">
+    <!--Parallax image-->
+    <div class="parallax">
+        <img src="img/david.jpg">
     </div>
+</div>
 
-    <br>
-    <div class="divider"></div>
-    <br>
 
-    <!--How to-->
-    <div class="section white">
-        <div class="row text-big">
-            <div class="col s8 offset-s2">
+<div class="section white">
+    <div class="container">
 
-                <h3 class="header center">How to</h3>
+        <!--Prices-->
+        <div class="section white">
+            <div class="row text-big">
+                <div class="col s8 offset-s2">
 
-                <p class="grey-text text-darken-2 ">To try SenSiMet you just have to click at the "TRY IT OUT"
-                    button on the header of the page. A modal will appear and prompt you to type two sentences or
-                    rather upload a file containing them.
-                    Once you do this, you just have to click on the button "PROCESS THE SENTENCES" and they will be sent
-                    to the server to process.
-                    While they are processing, a loading spinner will entertain you, and if everything goes well you can
-                    analyse and play with the results in the new window you'll be redirected to.</p>
+                    <h3 class="header center">Tarifas</h3>
+
+                    <div class="row">
+
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
+
+        <!--Division-->
+        <div class="row center">
+            <br>
+            <div class="col s12 divider"></div>
+        </div>
+
+        <!--Contacto-->
+        <div class="section scrollspy" id="contacto">
+
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="center">Contacto</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 ">
+
+                    <div class="col s12 l4">
+                        <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Horario: </h5>
+                        <p>Verano y Semana Santa:</p>
+                        <p class="light">Lunes a sábado 9:30 - 14:30 y 16:30 - 22:00 </p>
+                        <p class="light">Domingos y festivos 10:00 - 14:00 y 17:00 - 21:00 </p>
+                        <br>
+                        <p>Invierno:</p>
+                        <p class="light">Lunes a sábado 9:30 - 14:30 y 16:30 - 22:00 </p>
+                        <p class="light">Domingos cerrado</p>
+                        <br/>
+                    </div>
+
+                    <div class="col s12 l4">
+                        <h5><i class="fa fa-phone" aria-hidden="true"></i> Telefono: </h5>
+                        <p class="light"><a href="tel:986691002">986 691 002</a></p>
+                        <br/>
+
+                        <h5><i class="fa fa-envelope" aria-hidden="true"></i> Email: </h5>
+                        <p class="light"><a href="mailto:antomenfarma@hotmail.com">antomenfarma@hotmail.com</a></p>
+                    </div>
+
+                    <div class="col s12 l4">
+                        <h5><i class="fa fa-location-arrow" aria-hidden="true"></i> Direccion: </h5>
+                        <p class="light">Carretera de la Lanzada, 28 - mercado Portonovo
+                            36970 PORTONOVO, SANXENXO (Pontevedra)</p>
+                        <br/>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--Division-->
+        <div class="row center">
+            <br>
+            <div class="col s12 divider"></div>
+        </div>
+
+        <!--Partners-->
+        <div class="section scrollspy" id="partners">
+
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="center">Partners</h3>
+                </div>
+            </div>
+
+            <div class="row center">
+
+
+                <div class="col  s12">
+                    <img style="width: 30%" src="img/rogue.jpg">
+                </div>
+                <div class="col s12">
+                    <img style="width: 30%" src="img/progenex.jpg">
+                </div>
+                <div class="col  s12">
+                    <img style="width: 20%" src="img/fitaid.png">
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--Division-->
+        <div class="row center">
+            <br>
+            <div class="col s12 divider"></div>
+        </div>
+
+        <!--Localización-->
+        <div class="row center" id="ubicacion">
+            <div class="col s12">
+                <h3> ¿Dónde estamos? </h3>
+                <p>Carretera de la Lanzada, 28 - mercado Portonovo
+                    36970 PORTONOVO, SANXENXO (Pontevedra)</p>
+            </div>
+        </div>
+
+
     </div>
 
 </div>
 
-<br>
-<br>
+
+
+
+<!--Map-->
+<div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE">
+    <ng-map id="map" center="41,-87" zoom="9"></ng-map>
+</div>
+
 
 <!--Footer-->
 <footer class="page-footer blue-grey darken-2">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">About the author</h5>
-                <p class="grey-text text-lighten-4">SenSiMet was developed by Yago Fontenla Seco in a project supervised
-                    by Prof. Alberto Bugarín Diz and Dr. Martín Pereira Fariña at CiTiUS
+                <h5 class="white-text">Partners</h5>
+                <p class="grey-text text-lighten-4"
                 </p>
             </div>
             <div class="col l4 offset-l2 s12">
@@ -170,7 +344,8 @@
                     </li>
                     <li><a class="grey-text text-lighten-3" href="https://github.com/Yagouus">GitHub</a></li>
                     <li><a class="grey-text text-lighten-3" href="https://twitter.com/Yagouus">Twitter</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/yagofontenlaseco/">Linkedin</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/yagofontenlaseco/">Linkedin</a>
+                    </li>
 
                 </ul>
             </div>
@@ -178,7 +353,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2017 Yago Fontenla Seco
+            © Crossfit Hird. All rights reserved | Designed by: Yago Fontenla Seco
         </div>
     </div>
 </footer>
@@ -188,101 +363,95 @@
 <div id="processModal" class="modal">
 
     <div class="modal-content">
-        <h5>Type the sentences to compare</h5>
-        <br>
-        <div class="row" ng-hide="processing">
+        <div class="col s12 l8">
+            <br>
+            <h5>Escríbenos: </h5>
             <div class="row">
-                <div class="input-field col s12">
-                    <input id="s1" type="text" ng-model="s1">
-                    <label for="s1">Sentence 1</label>
-                </div>
-                <div class="input-field col s12">
-                    <input id="s2" type="text" ng-model="s2">
-                    <label for="s2">Sentence 2</label>
-                </div>
-            </div>
-            <div class="modal-footer">
+                <form class="col s12">
+                    <div class="row">
 
-                <button class="left btn-flat waves modal-close" data-target="uploadModal">Or upload a file with
-                    your sentences
-                </button>
-                <button ng-click="submitSentences()"
-                        class="white-text waves-effect waves-light btn-flat right teal accent-4">Process sentences <i
-                        class="material-icons right">send</i>
-                </button>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circlo</i>
+                            <input id="icon_nombre" type="text">
+                            <label for="icon_nombre">Nombre</label>
+                        </div>
 
-            </div>
-        </div>
+                        <div class="input-field col s12">
+                            <i class="fa fa-envelope prefix" aria-hidden="true"></i>
+                            <input id="icon_prefix" type="email">
+                            <label for="icon_prefix">Email</label>
+                        </div>
 
-        <!--Spinner-->
-        <div class="row" ng-show="processing">
-            <div class="col s12 center">
+                        <div class="input-field col s12">
+                            <i class="fa fa-phone prefix" aria-hidden="true"></i>
+                            <input id="icon_telephone" type="tel">
+                            <label for="icon_telephone">Telefono</label>
+                        </div>
 
-                <h6>Processing...</h6>
-                <br>
-                <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
-                            r="30"></circle>
-                </svg>
+                        <div class="input-field col s12">
+                            <i class="fa fa-comment prefix" aria-hidden="true"></i>
+                            <input id="icon_message" type="text">
+                            <label for="icon_message">Mensaje</label>
+                        </div>
 
-
+                        <div class="input-field col s12 center ">
+                            <button class="waves waves-effect btn" type="submit"> Enviar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-
     </div>
 
-</div>
-
-<!--New file form-->
-<div id="uploadModal" class="modal">
-    <div class="modal-content">
-        <h5>Upload new file</h5>
-        <br>
-        <div class="row" ng-hide="loading">
-            <div class="row">
-                <div class="col s12">
-                    <div class="input-field col s12">
-                        <div class="file-field input-field">
-                            <div class="btn teal accent-4 waves-effect waves-light ">
-                                <span>Choose file <i class="material-icons right">attach_file</i> </span>
-                                <input type="file" name="file" file-model="data.file">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path" type="text">
+    <!--New file form-->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <h5>Upload new file</h5>
+            <br>
+            <div class="row" ng-hide="loading">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field col s12">
+                            <div class="file-field input-field">
+                                <div class="btn teal accent-4 waves-effect waves-light ">
+                                    <span>Choose file <i class="material-icons right">attach_file</i> </span>
+                                    <input type="file" name="file" file-model="data.file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path" type="text">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <button class="left btn-flat waves modal-close" data-target="processModal">Or type two sentences
+                    </button>
+                    <button ng-click="submitFile()"
+                            class="white-text waves-effect waves-light btn-flat right teal accent-4">Upload <i
+                            class="material-icons right">file_upload</i>
+                    </button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button class="left btn-flat waves modal-close" data-target="processModal">Or type two sentences
-                </button>
-                <button ng-click="submitFile()"
-                        class="white-text waves-effect waves-light btn-flat right teal accent-4">Upload <i
-                        class="material-icons right">file_upload</i>
-                </button>
-            </div>
-        </div>
 
-        <!--Spinner-->
-        <div class="row">
-            <div class="col s12 center">
-                <spinner name="booksSpinner">
-                    <h6>Uploading...</h6>
-                    <br>
-                    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
-                                r="30"></circle>
-                    </svg>
-                    <!--<img src="img/spinner3.gif">-->
-                </spinner>
+            <!--Spinner-->
+            <div class="row">
+                <div class="col s12 center">
+                    <spinner name="booksSpinner">
+                        <h6>Uploading...</h6>
+                        <br>
+                        <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+                                    r="30"></circle>
+                        </svg>
+                        <!--<img src="img/spinner3.gif">-->
+                    </spinner>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 
 
 

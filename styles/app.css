@@ -27,9 +27,13 @@
     background-color: rgba(40, 45, 45, 0.6) !important;
 }
 
-.parallax-container {
-    height: 100vh;
+.top-container{
+    height: 100vh !important;
 }
+.parallax-container{
+    height: 60vh;
+}
+
 
 .background-image {
     position: fixed;
@@ -87,4 +91,36 @@ iframe{
 .cont{
     height: 100%;
     width: 100%;
+}
+
+.galaxy-wrapper {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.cross{
+    font-family: 'Anton', sans-serif;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.image{
+    height: 600px;
 }

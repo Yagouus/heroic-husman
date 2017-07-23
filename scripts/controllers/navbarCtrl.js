@@ -1,4 +1,4 @@
-angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$location', 'restService', 'postService', 'spinnerService', function ($scope, $http, $location, restService, postService, spinnerService) {
+angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$location', 'restService', function ($scope, $http, $location, restService) {
 
     //Positioning
     $('.target').pushpin({

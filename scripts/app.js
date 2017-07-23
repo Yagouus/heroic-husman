@@ -1,5 +1,5 @@
 //Modules
-angular.module("project", ['ngRoute']);
+angular.module("project", ['ngRoute', 'ngMap']);
 
 //Sections
 angular.module("project").config(["$routeProvider", function ($routeProvider) {
