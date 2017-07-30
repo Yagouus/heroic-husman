@@ -1,4 +1,4 @@
-angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$location', 'restService', function ($scope, $http, $location, restService) {
+angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$location', '$anchorScroll', 'restService', function ($scope, $http, $location, $anchorScroll, restService) {
 
     //Positioning
     $('.target').pushpin({
@@ -13,8 +13,18 @@ angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$locatio
 
     $scope.route = function (route) {
         return route === $location.path();
+    };
 
-    }
+    //ScrollTo
+    $scope.scrollTo = function(id) {
+
+        $location.hash(id);
+        console.log($location.hash());
+        $anchorScroll();
+    };
+
+
+
 
 
 }]);

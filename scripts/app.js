@@ -8,7 +8,8 @@ angular.module("project").config(["$routeProvider", function ($routeProvider) {
     $routeProvider
         .when("/main", {
             controller: "mainCtrl",
-            templateUrl: "views/main.html"
+            templateUrl: "views/main.html",
+            reloadOnSearch: false
         })
         .otherwise("/main");
 }]);

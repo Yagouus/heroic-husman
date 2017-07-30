@@ -28,17 +28,16 @@
                     <div class="col s4 offset-s4 center">
                         <div class="divider"></div>
                     </div>
+                    <br><br>
+                    <div class="col s12 center">
+                        <img style="width: 30%" src="img/viking.png">
+                    </div>
+
 
                 </div>
             </div>
 
-            <!--Buttons-->
-            <div class="valign">
-                <div class="col s12 center">
-                    <a class="btn-large waves-effect waves-light teal accent-4" data-target="processModal"> Try it
-                        out </a>
-                </div>
-            </div>
+
         </div>
 
     </div>
@@ -46,11 +45,10 @@
 </div>
 
 <!--Content divs-->
-
-<div class="section white">
+<div class="section white" id="crossfit">
     <div class="container">
 
-        <!--About-->
+        <!--Crossfit-->
         <div class="section white">
             <div class="row">
                 <div class="col s8 offset-s2">
@@ -88,8 +86,8 @@
         <div class="divider"></div>
         <br>
 
-        <!--Download-->
-        <div class="section white">
+        <!--Nosotros-->
+        <div class="section white" id="nosotros">
             <div class="row">
 
                 <h3 class="header center">Nosotros</h3>
@@ -145,20 +143,20 @@
     </div>
 </div>
 
-<!--Title div-->
+<!--parallax image-->
 <div class="parallax-container">
     <!--Parallax image-->
     <div class="parallax">
-        <img src="img/david.jpg">
+        <img src="img/box.jpg">
     </div>
 </div>
 
-
+<!--Content divs-->
 <div class="section white">
     <div class="container">
 
         <!--Prices-->
-        <div class="section white">
+        <div class="section white" id="prices">
             <div class="row text-big">
                 <div class="col s8 offset-s2">
 
@@ -223,11 +221,43 @@
             </div>
         </div>
 
-        <!--Division-->
+        <!--Division
         <div class="row center">
             <br>
             <div class="col s12 divider"></div>
-        </div>
+        </div>-->
+
+
+        <!--Slider
+        <div class="row">
+            <div class="col s12 center">
+                <h3>Instalaciones</h3>
+
+                <div class="carousel carousel-slider">
+                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+                </div>
+                <br>
+            </div>
+        </div>-->
+
+    </div>
+</div>
+
+<!--parallax image-->
+<div class="parallax-container">
+    <!--Parallax image-->
+    <div class="parallax">
+        <img src="img/box.jpg">
+    </div>
+</div>
+
+<!--Content divs-->
+<div class="section white">
+    <div class="container">
+
 
         <!--Contacto-->
         <div class="section scrollspy" id="contacto">
@@ -268,6 +298,14 @@
                 </div>
 
 
+                <div class="row">
+                    <div class="col s12 center">
+                        <a class="btn-large waves-effect waves-light teal accent-4" data-target="processModal">
+                            Envíanos un mensaje!</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
@@ -277,7 +315,7 @@
             <div class="col s12 divider"></div>
         </div>
 
-        <!--Partners-->
+        <!--Partners
         <div class="section scrollspy" id="partners">
 
             <div class="row">
@@ -303,11 +341,10 @@
             </div>
         </div>
 
-        <!--Division-->
         <div class="row center">
             <br>
             <div class="col s12 divider"></div>
-        </div>
+        </div>-->
 
         <!--Localización-->
         <div class="row center" id="ubicacion">
@@ -324,43 +361,66 @@
 </div>
 
 
-
-
 <!--Map-->
-<div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE">
-    <ng-map id="map" center="42.905784, -8.505412" zoom="15">
+<div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE" href="comgooglemapsurl://maps.google.com/?q=@42.905784, -8.505412">
+    <ng-map id="map" center="42.905784, -8.505412" zoom="15" scrollwheel="false">
         <marker position="42.905784, -8.505412"></marker>
     </ng-map>
 </div>
 
 
 <!--Footer-->
-<footer class="page-footer blue-grey darken-2">
+<footer class="page-footer grey ">
     <div class="container">
         <div class="row">
+
+            <!--Partners-->
             <div class="col l6 s12">
                 <h5 class="white-text">Partners</h5>
-                <p class="grey-text text-lighten-4"
+                <p class="grey-text text-lighten-4">
+                <div class="row">
+                    <div class="col s12">
+                        <img style="width: 30%" src="img/Progenex.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col  s12">
+                        <img style="width: 30%" src="img/rogue.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col  s12">
+                        <img style="width: 20%" src="img/fitaid.png">
+                    </div>
+                </div>
                 </p>
             </div>
+
+            <!--Links-->
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3"
-                           href="https://citius.usc.es/equipo/investigadores-en-formacion/yago-fontenla-seco">CiTIUS</a>
-                    </li>
-                    <li><a class="grey-text text-lighten-3" href="https://github.com/Yagouus">GitHub</a></li>
                     <li><a class="grey-text text-lighten-3" href="https://twitter.com/Yagouus">Twitter</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/yagofontenlaseco/">Linkedin</a>
+                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/yagofontenlaseco/">Facebook</a>
                     </li>
 
                 </ul>
             </div>
+
         </div>
     </div>
+
     <div class="footer-copyright">
         <div class="container">
-            © Crossfit Hird. All rights reserved | Designed by: Yago Fontenla Seco
+
+                <div class="col s6 left">
+                    © Crossfit Hird. All rights reserved
+                </div>
+                <div class="col s6 right">
+                    Designed with <i class="tiny material-icons">favorite</i> Yago Fontenla Seco
+                </div>
+
+
         </div>
     </div>
 </footer>
@@ -378,7 +438,7 @@
                     <div class="row">
 
                         <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circlo</i>
+                            <i class="material-icons prefix">account_circle</i>
                             <input id="icon_nombre" type="text">
                             <label for="icon_nombre">Nombre</label>
                         </div>
@@ -461,8 +521,4 @@
     </div>
 
 
-
-
-
-
-
+</div>

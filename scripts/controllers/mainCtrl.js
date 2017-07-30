@@ -1,8 +1,9 @@
-angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location", 'restService', 'NgMap', function ($scope, $http, $location, restService, NgMap) {
+angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location", '$anchorScroll', 'restService', 'NgMap', function ($scope, $http, $location, $anchorScroll, restService, NgMap) {
 
     //Materialize
     $('.modal').modal();
     $('.parallax').parallax();
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
 
     //Net
     (function() {
@@ -239,5 +240,7 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
         console.log('markers', map.markers);
         console.log('shapes', map.shapes);
     });
+
+
 
 }]);
