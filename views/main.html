@@ -537,30 +537,30 @@
 
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_nombre" type="text">
+                            <input id="icon_nombre" type="text" ng-model="name">
                             <label for="icon_nombre">Nombre</label>
                         </div>
 
                         <div class="input-field col s12">
                             <i class="fa fa-envelope prefix" aria-hidden="true"></i>
-                            <input id="icon_prefix" type="email">
+                            <input id="icon_prefix" type="email" ng-model="email">
                             <label for="icon_prefix">Email</label>
                         </div>
 
                         <div class="input-field col s12">
                             <i class="fa fa-phone prefix" aria-hidden="true"></i>
-                            <input id="icon_telephone" type="tel">
+                            <input id="icon_telephone" type="tel" ng-model="phone">
                             <label for="icon_telephone">Telefono</label>
                         </div>
 
                         <div class="input-field col s12">
                             <i class="fa fa-comment prefix" aria-hidden="true"></i>
-                            <input id="icon_message" type="text">
-                            <label for="icon_message">Mensaje</label>
+                            <textarea id="textarea1" class="materialize-textarea" ng-model="msg"></textarea>
+                            <label for="textarea1">Mensaje</label>
                         </div>
 
                         <div class="input-field col s12 center ">
-                            <button class="waves waves-effect btn" type="submit"> Enviar</button>
+                            <button class="waves waves-effect btn" type="submit" ng-click="sendMail()"> Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -600,22 +600,6 @@
                 </div>
             </div>
 
-            <!--Spinner-->
-            <div class="row">
-                <div class="col s12 center">
-                    <spinner name="booksSpinner">
-                        <h6>Uploading...</h6>
-                        <br>
-                        <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33"
-                                    cy="33"
-                                    r="30"></circle>
-                        </svg>
-                        <!--<img src="img/spinner3.gif">-->
-                    </spinner>
-                </div>
-            </div>
 
         </div>
     </div>
