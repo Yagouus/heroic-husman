@@ -11,5 +11,10 @@ angular.module("project").config(["$routeProvider", function ($routeProvider) {
             templateUrl: "views/main.html",
             reloadOnSearch: false
         })
+        .when("/hero", {
+            controller: "heroCtrl",
+            templateUrl: "views/hero.html",
+            reloadOnSearch: false
+        })
         .otherwise("/main");
 }]);
