@@ -1,27 +1,48 @@
 <!--Navbar-->
-<div class="navbar-fixed" ng-controller="navbarCtrl">
-    <nav class="z-depth-0 target " ng-class="route('/result') ? 'teal' : 'transparent'" role="navigation"> <div class="nav-wrapper container">
-            <!--<a id="logo-container" href="#" class="brand-logo center">SenSiMet</a>-->
+<div ng-class="route('/hero') ? 'navbar' : 'navbar-fixed'" ng-controller="navbarCtrl">
 
-            <!-- <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal" ng-click="isOpen = !isOpen"
-                href="#/process">
-                 <i class="material-icons">add</i>
-             </a>-->
+    <nav class="z-depth-0 target" ng-class="route('/hero') ? 'grey darken-4' : 'transparent'" role="navigation">
+        <div class="nav-wrapper container">
+
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class=" right hide-on-med-and-down">
+
+            <ul ng-hide="route('/hero')" id="nav-mobile" class=" left hide-on-med-and-down">
                 <li><a ng-click="scrollTo('crossfit')">CrossFit</a></li>
                 <li><a ng-click="scrollTo('nosotros')">Nosotros</a></li>
                 <li><a ng-click="scrollTo('prices')">Tarifas</a></li>
-                <li><a href="#hero">Reservas</a></li>
+                <li><a ng-click="scrollTo('contact')">Contacto</a></li>
+                <li><a ng-click="scrollTo('contact')">Horario</a></li>
             </ul>
+            <ul ng-hide="route('/hero')" id="nav-mobile" class=" right hide-on-med-and-down">
+            <li><a class="right teal"  href="#hero">Reservas</a></li>
+            </ul>
+
+            <ul ng-show="route('/hero')" id="nav-mobile" class=" left hide-on-med-and-down">
+                <li><a href="#main">CrossFit</a></li>
+                <li><a href="#main">Nosotros</a></li>
+                <li><a href="#main">Tarifas</a></li>
+                <li><a href="#main">Contacto</a></li>
+                <li><a href="#main">Horario</a></li>
+            </ul>
+            <ul ng-show="route('/hero')" id="nav-mobile" class=" right hide-on-med-and-down">
+                <li><a class="right teal" href="#hero">Reservas</a></li>
+            </ul>
+
+
 
         </div>
     </nav>
+
+
+
 </div>
 
 <!--Mobile nav-->
-<ul class="side-nav white" id="mobile-demo">
-    <li><a href="sass.html">Test it! </a></li>
-    <li><a href="collapsible.html">How to</a></li>
-    <li><a href="collapsible.html">About</a></li>
+<ul class="side-nav" id="mobile-demo">
+    <li><a href="#main" ng-click="scrollTo('crossfit')">CrossFit</a></li>
+    <li><a href="#main" ng-click="scrollTo('nosotros')">Nosotros</a></li>
+    <li><a href="#main" ng-click="scrollTo('prices')">Tarifas</a></li>
+    <li><a href="#hero">Reservas</a></li>
 </ul>
+
+

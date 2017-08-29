@@ -1,3 +1,3 @@
-angular.module("project").controller("indexCtrl", ["$scope", "$http", 'restService', function ($scope, $http, restService) {
+angular.module("project").controller("heroCtrl", ["$scope", "$http", 'restService', function ($scope, $http, restService) {
 
 }]);

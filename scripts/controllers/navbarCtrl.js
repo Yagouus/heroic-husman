@@ -2,14 +2,20 @@ angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$locatio
 
     //Positioning
     $('.target').pushpin({
-        top: $(window).height() - 80
+        top: $(window).height()
     });
+
     $(window).resize(function () {
         $('.target').pushpin({
-            top: $(window).height() - 80
+            top: $(window).height()
         });
     });
+
     $(".button-collapse").sideNav();
+    $('.collapsible').collapsible();
+    $('.button-collapse').sideNav({
+        closeOnClick: true
+    });
 
     $scope.route = function (route) {
         return route === $location.path();
@@ -17,7 +23,6 @@ angular.module("project").controller("navbarCtrl", ["$scope", "$http", '$locatio
 
     //ScrollTo
     $scope.scrollTo = function(id) {
-
         $location.hash(id);
         console.log($location.hash());
         $anchorScroll();

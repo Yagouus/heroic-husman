@@ -14,6 +14,7 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
 
     $scope.sendMail = function () {
 
+        $('#processModal').modal('close');
 
         var config = {
             headers: {
@@ -24,9 +25,9 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
 
         var fd = new FormData();
         fd.append('name', $scope.name);
-        fd.append('name', $scope.email);
-        fd.append('name', $scope.phone);
-        fd.append('name', $scope.msg);
+        fd.append('sender', $scope.email);
+        fd.append('tlf', $scope.phone);
+        fd.append('msg', $scope.msg);
 
         console.log(restService.url);
 
@@ -40,6 +41,11 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
                 swal('Error!', 'An error ocurred :(', 'error')
             });
     };
+
+    $scope.setMessage = function(message){
+            $scope.msg = message;
+        $('#processModal').modal('open');
+    }
 
 
 }]);
