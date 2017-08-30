@@ -38,11 +38,20 @@
 </div>
 
 <!--Mobile nav-->
-<ul class="side-nav" id="mobile-demo">
-    <li><a href="#main" ng-click="scrollTo('crossfit')">CrossFit</a></li>
-    <li><a href="#main" ng-click="scrollTo('nosotros')">Nosotros</a></li>
-    <li><a href="#main" ng-click="scrollTo('prices')">Tarifas</a></li>
-    <li><a href="#hero">Reservas</a></li>
+<ul class="side-nav"  id="mobile-demo" ng-controller="navbarCtrl">
+    <li><a ng-hide="route('/hero')" ng-click="scrollTo('crossfit')">CrossFit</a></li>
+    <li><a ng-hide="route('/hero')" ng-click="scrollTo('nosotros')">Nosotros</a></li>
+    <li><a ng-hide="route('/hero')" ng-click="scrollTo('prices')">Tarifas</a></li>
+    <li><a ng-hide="route('/hero')" ng-click="scrollTo('contact')">Contacto</a></li>
+    <li><a ng-hide="route('/hero')" ng-click="scrollTo('contact')">Horario</a></li>
+    <li><a ng-hide="route('/hero')" href="#hero">Reservas</a></li>
+    <li><a ng-show="route('/hero')" href="#main#crossfit" >CrossFit</a></li>
+    <li><a ng-show="route('/hero')" href="#main#nosotros">Nosotros</a></li>
+    <li><a ng-show="route('/hero')" href="#main#prices">Tarifas</a></li>
+    <li><a ng-show="route('/hero')" href="#main#contact">Contacto</a></li>
+    <li><a ng-show="route('/hero')" href="#main#contact">Horario</a></li>
+    <li><a ng-show="route('/hero')" href="#hero">Reservas</a></li>
 </ul>
+
 
 
