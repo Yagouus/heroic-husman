@@ -18,11 +18,13 @@
             </ul>
 
             <ul ng-show="route('/hero')" id="nav-mobile" class=" left hide-on-med-and-down">
-                <li><a href="#main">CrossFit</a></li>
-                <li><a href="#main">Nosotros</a></li>
-                <li><a href="#main">Tarifas</a></li>
-                <li><a href="#main">Contacto</a></li>
-                <li><a href="#main">Horario</a></li>
+                <li><a ng-hide="route('/hero')" href="#hero">Reservas</a></li>
+                <li><a ng-show="route('/hero')" href="#main#crossfit" >CrossFit</a></li>
+                <li><a ng-show="route('/hero')" href="#main#nosotros">Nosotros</a></li>
+                <li><a ng-show="route('/hero')" href="#main#prices">Tarifas</a></li>
+                <li><a ng-show="route('/hero')" href="#main#contact">Contacto</a></li>
+                <li><a ng-show="route('/hero')" href="#main#contact">Horario</a></li>
+                <li><a ng-show="route('/hero')" href="#hero">Reservas</a></li>
             </ul>
             <ul ng-show="route('/hero')" id="nav-mobile" class=" right hide-on-med-and-down">
                 <li><a class="right teal" href="#hero">Reservas</a></li>
