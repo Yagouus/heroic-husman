@@ -7,9 +7,6 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
     $('.modal').modal();
     $('.parallax').parallax();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
-    $(document).ready(function() {
-        $('select').material_select();
-    });
 
 
     //Map
@@ -34,10 +31,7 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
         fd.append('name', $scope.name);
         fd.append('sender', $scope.email);
         fd.append('tlf', $scope.phone);
-        fd.append('msg', 'PREINSCRIPCION INICIACION -> ' + 'PREFERENCIA HOARIA:' + $scope.msg);
-
-        console.log(restService.url);
-
+        fd.append('msg', 'PREINSCRIPCION INICIACION -> ' + 'PREFERENCIA HOARIA: ' + $scope.msg);
 
         return $http.post(restService.url + '/email', fd, config)
             .then(function success(response) {

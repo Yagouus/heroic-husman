@@ -15,7 +15,7 @@
             en grupos reducidos de hasta 8 personas, enseñamos las mecánicas y ejecución correctas de los movimientos
             fundamentales de CrossFit de una manera progresiva y sin ningún tipo de intensidad. Dicha intensidad se
             introducirá de manera paulatina una vez incorporados en las clases regulares. El coste del curso es de 35€,
-            que serán descontados de la tarifa mensual que escojas una vez terminado el mismo
+            que serán descontados de la tarifa mensual que escojas una vez terminado el mismo.
         </p>
         <br>
         <div class="row">
@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="input-field col s12">
-                        <input id="icon_prefix" type="email" ng-model="email">
+                        <input id="icon_prefix" type="text" ng-model="email">
                         <label for="icon_prefix">Email</label>
                     </div>
 
@@ -37,11 +37,11 @@
                         <label for="icon_telephone">Telefono</label>
                     </div>
 
-                    <div class="input-field col s12 browser-default">
-                        <select>
+                    <div class="input-field col s12">
+                        <select class="browser-default" ng-model="msg">
                             <option value="" disabled selected>Preferencia horaria</option>
-                            <option value="1">Mañana</option>
-                            <option value="2">Tarde</option>
+                            <option value="Manana">Mañana</option>
+                            <option value="Tarde">Tarde</option>
                         </select>
                     </div>
 
