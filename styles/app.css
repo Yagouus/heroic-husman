@@ -169,3 +169,16 @@ canvas{
 .section{
     z-index: 999;
 }
+
+.bottom{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.arrow{
+    font-size: 8em;
+}
