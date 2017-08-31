@@ -23,6 +23,7 @@
                         CrossFit Berkana
                     </h1>
                     <div class="col s12 center">
+                        <a class="btn-large teal waves-effect" href="#signup">Preinscripción iniciación</a>
                         <!--<img style="width: 40%" src="img/viking.png">-->
                     </div>
                 </div>
@@ -298,7 +299,7 @@
                                     <b> Accesos semanales: 3 </b>
                                 </p>
                                 <p>
-                                    <b> Especialidades: 3 al mes </b>
+                                    <b> Especialidades: 4 al mes </b>
                                 </p>
                             </div>
                             <div class="card-action">
@@ -370,8 +371,6 @@
                         </div>
                         <br>
                     </div>
-
-
 
 
                 </div>
@@ -593,12 +592,14 @@
 </div>
 
 <!--Map-->
-<div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE"
-     href="comgooglemapsurl://maps.google.com/?q=@42.905784, -8.505412">
-    <ng-map id="map" center="42.905784, -8.505412" zoom="15" scrollwheel="false">
-        <marker position="42.905784, -8.505412"></marker>
-    </ng-map>
-</div>
+<a href="http://maps.apple.com/?q=CrossFit+Berkana">
+    <div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE"
+         href="https://www.google.es/maps/place/CrossFit+Berkana/">
+        <ng-map id="map" center="Crossfit Berkana" zoom="15" scrollwheel="false">
+            <marker position="Crossfit Berkana"></marker>
+        </ng-map>
+    </div>
+</a>
 
 
 <!--Footer-->
@@ -701,7 +702,8 @@
 
                         <div class="input-field col s12">
                             <i class="fa fa-comment prefix" aria-hidden="true"></i>
-                            <textarea id="textarea1" class="materialize-textarea" ng-model="msg" placeholder="Mensaje"></textarea>
+                            <textarea id="textarea1" class="materialize-textarea" ng-model="msg"
+                                      placeholder="Mensaje"></textarea>
                         </div>
 
                         <div class="input-field col s12 center ">

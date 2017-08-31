@@ -1,35 +1,29 @@
 <!--Navbar-->
 <div ng-class="route('/hero') ? 'navbar' : 'navbar-fixed'" ng-controller="navbarCtrl">
 
-    <nav class="z-depth-0 target" ng-class="route('/hero') ? 'grey darken-4' : 'transparent'" role="navigation">
+    <nav class="z-depth-0 target" ng-class="route('/main') ? 'transparent' : 'grey darken-4'" role="navigation">
         <div class="nav-wrapper container">
 
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-            <ul ng-hide="route('/hero')" id="nav-mobile" class=" left hide-on-med-and-down">
-                <li><a ng-click="scrollTo('crossfit')">CrossFit</a></li>
-                <li><a ng-click="scrollTo('nosotros')">Nosotros</a></li>
-                <li><a ng-click="scrollTo('prices')">Tarifas</a></li>
-                <li><a ng-click="scrollTo('contact')">Contacto</a></li>
-                <li><a ng-click="scrollTo('contact')">Horario</a></li>
+            <ul id="nav-mobile" class=" left hide-on-med-and-down">
+                <li><a ng-show="route('/main')" ng-click="scrollTo('crossfit')">CrossFit</a></li>
+                <li><a ng-show="route('/main')" ng-click="scrollTo('nosotros')">Nosotros</a></li>
+                <li><a ng-show="route('/main')" ng-click="scrollTo('prices')">Tarifas</a></li>
+                <li><a ng-show="route('/main')" ng-click="scrollTo('contact')">Contacto</a></li>
+                <li><a ng-show="route('/main')" ng-click="scrollTo('contact')">Horario</a></li>
+                <li><a ng-show="route('/main')" href="#hero">Reservas</a></li>
+                <li><a ng-hide="route('/main')" href="#main#crossfit" >CrossFit</a></li>
+                <li><a ng-hide="route('/main')" href="#main#nosotros">Nosotros</a></li>
+                <li><a ng-hide="route('/main')" href="#main#prices">Tarifas</a></li>
+                <li><a ng-hide="route('/main')" href="#main#contact">Contacto</a></li>
+                <li><a ng-hide="route('/main')" href="#main#contact">Horario</a></li>
+                <li><a ng-hide="route('/main')" href="#hero">Reservas</a></li>
             </ul>
-            <ul ng-hide="route('/hero')" id="nav-mobile" class=" right hide-on-med-and-down">
-            <li><a class="right teal"  href="#hero">Reservas</a></li>
+            <ul id="nav-mobile" class=" right hide-on-med-and-down">
+                <!--<li><a class="right teal" href="#hero">Reservas</a></li>-->
+                <li><a class="right teal" href="#signup">Preinscripción iniciación</a></li>
             </ul>
-
-            <ul ng-show="route('/hero')" id="nav-mobile" class=" left hide-on-med-and-down">
-                <li><a ng-hide="route('/hero')" href="#hero">Reservas</a></li>
-                <li><a ng-show="route('/hero')" href="#main#crossfit" >CrossFit</a></li>
-                <li><a ng-show="route('/hero')" href="#main#nosotros">Nosotros</a></li>
-                <li><a ng-show="route('/hero')" href="#main#prices">Tarifas</a></li>
-                <li><a ng-show="route('/hero')" href="#main#contact">Contacto</a></li>
-                <li><a ng-show="route('/hero')" href="#main#contact">Horario</a></li>
-                <li><a ng-show="route('/hero')" href="#hero">Reservas</a></li>
-            </ul>
-            <ul ng-show="route('/hero')" id="nav-mobile" class=" right hide-on-med-and-down">
-                <li><a class="right teal" href="#hero">Reservas</a></li>
-            </ul>
-
 
 
         </div>
@@ -41,18 +35,18 @@
 
 <!--Mobile nav-->
 <ul class="side-nav"  id="mobile-demo" ng-controller="navbarCtrl">
-    <li><a ng-hide="route('/hero')" ng-click="scrollTo('crossfit')">CrossFit</a></li>
-    <li><a ng-hide="route('/hero')" ng-click="scrollTo('nosotros')">Nosotros</a></li>
-    <li><a ng-hide="route('/hero')" ng-click="scrollTo('prices')">Tarifas</a></li>
-    <li><a ng-hide="route('/hero')" ng-click="scrollTo('contact')">Contacto</a></li>
-    <li><a ng-hide="route('/hero')" ng-click="scrollTo('contact')">Horario</a></li>
-    <li><a ng-hide="route('/hero')" href="#hero">Reservas</a></li>
-    <li><a ng-show="route('/hero')" href="#main#crossfit" >CrossFit</a></li>
-    <li><a ng-show="route('/hero')" href="#main#nosotros">Nosotros</a></li>
-    <li><a ng-show="route('/hero')" href="#main#prices">Tarifas</a></li>
-    <li><a ng-show="route('/hero')" href="#main#contact">Contacto</a></li>
-    <li><a ng-show="route('/hero')" href="#main#contact">Horario</a></li>
-    <li><a ng-show="route('/hero')" href="#hero">Reservas</a></li>
+    <li><a ng-show="route('/main')" ng-click="scrollTo('crossfit')">CrossFit</a></li>
+    <li><a ng-show="route('/main')" ng-click="scrollTo('nosotros')">Nosotros</a></li>
+    <li><a ng-show="route('/main')" ng-click="scrollTo('prices')">Tarifas</a></li>
+    <li><a ng-show="route('/main')" ng-click="scrollTo('contact')">Contacto</a></li>
+    <li><a ng-show="route('/main')" ng-click="scrollTo('contact')">Horario</a></li>
+    <li><a ng-hide="route('/main')" href="#main#crossfit" >CrossFit</a></li>
+    <li><a ng-hide="route('/main')" href="#main#nosotros">Nosotros</a></li>
+    <li><a ng-hide="route('/main')" href="#main#prices">Tarifas</a></li>
+    <li><a ng-hide="route('/main')" href="#main#contact">Contacto</a></li>
+    <li><a ng-hide="route('/main')" href="#main#contact">Horario</a></li>
+    <li><a href="#hero">Reservas</a></li>
+    <li><a href="#signup">Preinscripción iniciación</a></li>
 </ul>
 
 

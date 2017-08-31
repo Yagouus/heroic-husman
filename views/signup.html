@@ -1,0 +1,57 @@
+<!--Include navbar-->
+<ng-include src="'views/navbar.html'"></ng-include>
+<div class="container">
+    <div class="col s12 l8">
+        <br>
+        <h4 class="center">Curso de iniciación</h4>
+        <br>
+        <h5 class="center">Preinscribete aqui!</h5>
+        <p class="center grey-text text-darken-2">NOTA: La preinscipción es solo necesaria para aquellos que tengan que
+            realizar el curso de iniciación:</p>
+        <br>
+        <br>
+        <p class="center grey-text text-darken-2">El Curso de Iniciación se compone de cuatro clases de formación de una
+            hora de duración. En estas sesiones,
+            en grupos reducidos de hasta 8 personas, enseñamos las mecánicas y ejecución correctas de los movimientos
+            fundamentales de CrossFit de una manera progresiva y sin ningún tipo de intensidad. Dicha intensidad se
+            introducirá de manera paulatina una vez incorporados en las clases regulares. El coste del curso es de 35€,
+            que serán descontados de la tarifa mensual que escojas una vez terminado el mismo
+        </p>
+        <br>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <input id="icon_nombre" type="text" ng-model="name">
+                        <label for="icon_nombre">Nombre</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input id="icon_prefix" type="email" ng-model="email">
+                        <label for="icon_prefix">Email</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input id="icon_telephone" type="tel" ng-model="phone">
+                        <label for="icon_telephone">Telefono</label>
+                    </div>
+
+                    <div class="input-field col s12 browser-default">
+                        <select>
+                            <option value="" disabled selected>Preferencia horaria</option>
+                            <option value="1">Mañana</option>
+                            <option value="2">Tarde</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-field col s12 center ">
+                        <button class="waves waves-effect btn" type="submit" ng-click="sendMail()"> Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
