@@ -46,7 +46,7 @@ iframe {
 }
 
 .blur {
-    background-color: rgba(40, 45, 45, 0.6) !important;
+    background-color: rgba(136, 139, 141, 0.6) !important;
 }
 
 .top-container{
@@ -63,11 +63,11 @@ iframe {
     z-index: 1;
     display: block;
     background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(15px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
 }
 
 .content {
