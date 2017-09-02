@@ -1,3 +1,3 @@
-/**
- * Created by yagouus on 1/09/17.
- */
+angular.module("project").controller("lopdCtrl", ["$scope", "$http", 'restService', function ($scope, $http, restService) {
+
+}]);

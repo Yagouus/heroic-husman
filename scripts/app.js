@@ -21,5 +21,10 @@ angular.module("project").config(["$routeProvider", function ($routeProvider) {
             templateUrl: "views/signup.html",
             reloadOnSearch: false
         })
+        .when("/lopd", {
+            controller: "lopdCtrl",
+            templateUrl: "views/lopd.html",
+            reloadOnSearch: false
+        })
         .otherwise("/main");
 }]);
