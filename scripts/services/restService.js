@@ -9,7 +9,7 @@ angular.module("project").service("restService", ["$http", "$location", function
     };
 
     //Backend url
-    //this.url = 'http://localhost:8080';
-    this.url = 'http://crossfitberkana.com:8080';
+    this.url = 'http://localhost:8080';
+    //this.url = 'http://crossfitberkana.com:8080';
 
 }]);
