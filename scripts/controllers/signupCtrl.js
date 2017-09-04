@@ -31,7 +31,10 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
         fd.append('name', $scope.name);
         fd.append('sender', $scope.email);
         fd.append('tlf', $scope.phone);
-        fd.append('msg', 'PREINSCRIPCION INICIACION -> ' + 'PREFERENCIA HOARIA: ' + $scope.msg);
+        fd.append('msg',
+            '---PREINSCRIPCION INICIACION---'
+            + '\nPREFERENCIA FECHAS: ' + $scope.dates
+            + '\nPREFERENCIA HORARIA: ' + $scope.msg);
 
         return $http.post(restService.url + '/email', fd, config)
             .then(function success(response) {
@@ -43,7 +46,7 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
             });
     };
 
-    $scope.setMessage = function(message){
+    $scope.setMessage = function (message) {
         $scope.msg = message;
         $('#processModal').modal('open');
     }
