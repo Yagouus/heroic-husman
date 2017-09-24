@@ -24,10 +24,11 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
 
         var text = "NOMBRE: " + $scope.name
             + "\nTLF: " + $scope.phone
+            + "\nEMAIL: " + $scope.email
             + "\nMENSAJE: " + $scope.msg;
 
         var mail = {
-            "to": $scope.email,
+            "to": "info@crossfitberkana.com",
             "subject": "CONSULTA WEB",
             "text": text
         };
