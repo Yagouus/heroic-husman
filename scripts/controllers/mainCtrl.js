@@ -18,21 +18,21 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
 
         var config = {
             headers: {
-                'Content-Type': undefined
-            },
-            transformRequest: angular.identity
+                'Content-Type': "application/json"
+            }
         };
 
-        var fd = new FormData();
-        fd.append('name', $scope.name);
-        fd.append('sender', $scope.email);
-        fd.append('tlf', $scope.phone);
-        fd.append('msg', $scope.msg);
+        var text = "NOMBRE: " + $scope.name
+            + "\nTLF: " + $scope.phone
+            + "\nMENSAJE: " + $scope.msg;
 
-        console.log(restService.url);
+        var mail = {
+            "to": $scope.email,
+            "subject": "CONSULTA WEB",
+            "text": text
+        };
 
-
-        return $http.post(restService.url + '/email', fd, config)
+        return $http.post(restService.url + '/email', mail, config)
             .then(function success(response) {
                 swal('Listo!', 'Tu mensaje ha sido enviado', 'success');
                 $('#uploadModal').modal('close');
@@ -42,8 +42,8 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
             });
     };
 
-    $scope.setMessage = function(message){
-            $scope.msg = message;
+    $scope.setMessage = function (message) {
+        $scope.msg = message;
         $('#processModal').modal('open');
     }
 
