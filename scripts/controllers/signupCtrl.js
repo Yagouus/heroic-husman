@@ -18,25 +18,30 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
 
     $scope.sendMail = function () {
 
+
+
         $('#processModal').modal('close');
 
         var config = {
             headers: {
-                'Content-Type': undefined
-            },
-            transformRequest: angular.identity
+                'Content-Type': "application/json"
+            }
         };
 
-        var fd = new FormData();
-        fd.append('name', $scope.name);
-        fd.append('sender', $scope.email);
-        fd.append('tlf', $scope.phone);
-        fd.append('msg',
-            '---PREINSCRIPCION INICIACION---'
+        var text = "NOMBRE: " + $scope.name
+            + "\nTLF: " + $scope.phone
+            + "\nEMAIL: " + $scope.email
+            + '---PREINSCRIPCION INICIACION---'
             + '\nPREFERENCIA FECHAS: ' + $scope.dates
-            + '\nPREFERENCIA HORARIA: ' + $scope.msg);
+            + '\nPREFERENCIA HORARIA: ' + $scope.msg;
 
-        return $http.post(restService.url + '/email', fd, config)
+        var mail = {
+            "to": "info@crossfitberkana.com",
+            "subject": "CONSULTA WEB",
+            "text": text
+        };
+
+        return $http.post(restService.url + '/email', mail, config)
             .then(function success(response) {
                 swal('Listo!', 'Tu mensaje ha sido enviado', 'success');
                 $('#uploadModal').modal('close');
@@ -44,6 +49,7 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
             }, function error(response) {
                 swal('Error!', 'An error ocurred :(', 'error')
             });
+        
     };
 
     $scope.setMessage = function (message) {
