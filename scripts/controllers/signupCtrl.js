@@ -49,7 +49,7 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
             }, function error(response) {
                 swal('Error!', 'An error ocurred :(', 'error')
             });
-        
+
     };
 
     $scope.setMessage = function (message) {
