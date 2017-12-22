@@ -79,6 +79,7 @@ iframe {
 
 .pinned {
     background-color: #212121 !important;
+    z-index:9999999;
 }
 
 .pin-top {
@@ -132,25 +133,6 @@ h1 {
 .cont{
     height: 100%;
     width: 100%;
-}
-
-.galaxy-wrapper {
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-canvas{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
 }
 
 .cross{

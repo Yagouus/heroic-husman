@@ -1,11 +1,8 @@
 <!--Navbar-->
-<div ng-class="route('/hero') ? 'navbar' : 'navbar-fixed'" ng-controller="navbarCtrl">
-
+<div ng-class="route('/hero') ? 'navbar' : 'navbar-fixed'" ng-controller="navbarCtrl" class="z">
     <nav class="z-depth-0 target" ng-class="route('/main') ? 'transparent' : 'grey darken-4'" role="navigation">
         <div class="nav-wrapper container">
-
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-
             <ul id="nav-mobile" class=" left hide-on-med-and-down">
                 <li><a ng-show="route('/main')" ng-click="scrollTo('crossfit')">CrossFit</a></li>
                 <li><a ng-show="route('/main')" ng-click="scrollTo('nosotros')">Nosotros</a></li>
@@ -20,17 +17,11 @@
                 <li><a ng-hide="route('/main')" href="#main#contact">Horario</a></li>
                 <li><a ng-hide="route('/main')" href="#hero">Reservas</a></li>
             </ul>
-            <ul id="nav-mobile" class=" right hide-on-med-and-down">
-                <!--<li><a class="right teal" href="#hero">Reservas</a></li>-->
+            <ul id="nav-mobile2" class=" right hide-on-med-and-down">
                 <li><a class="right teal" href="#signup">APÚNTATE YA!</a></li>
             </ul>
-
-
         </div>
     </nav>
-
-
-
 </div>
 
 <!--Mobile nav-->
