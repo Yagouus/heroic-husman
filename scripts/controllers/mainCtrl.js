@@ -45,7 +45,10 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
 
     $scope.setMessage = function (message) {
         $scope.msg = message;
-        $('#processModal').modal('open');
+        //$('#processModal').modal('open');
+        $location.hash('contact');
+        console.log($location.hash());
+        $anchorScroll();
     }
 
 
