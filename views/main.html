@@ -114,8 +114,6 @@
     </div>
 </div>
 
-
-
 <!--Classes-->
 <div class="section grey lighten-4 grey-text text-darken-3" id="objectives">
     <div class="container">
@@ -173,7 +171,6 @@
 
     </div>
 </div>
-
 
 <!--parallax image-->
 <div class="parallax-container">
@@ -338,123 +335,85 @@
     </div>
 </div>
 
-<!--parallax image
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="img/box.jpg">
-    </div>
-</div>-->
-
 <!--Contact-->
 <div class="section grey lighten-4 grey-text text-darken-4  scrollspy" id="contact">
-
     <div class="container">
-
-        <!--<div class="card">
-            <div class="card-content">-->
-
-
-        <!--TItulo-->
-
+        <!--Titulo-->
         <div class="row">
             <div class="col s12">
                 <h3 class="center">Contacto</h3>
             </div>
         </div>
-
-
-        <div class="row center">
-
-            <div class="col s12 l3">
-                <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Horario: </h5>
-                <p class="light">Lunes a Viernes: 8:00 - 23:00</p>
-                <p class="light">Sábado: 09:00 - 14:00 y de 17:00 a 20:00</p>
-                <br>
-                <a href="" class="grey-text text-darken-2" data-target="classModal">Ver horario de clases</a>
-                <br>
-                <br>
-            </div>
-
-            <div class="col s12 l3">
-                <h5><i class="fa fa-phone" aria-hidden="true"></i> Telefono: </h5>
-                <p class="light"><a class="grey-text text-darken-2" href="tel:699016409">699 016 409</a></p>
-                <br/>
-            </div>
-
-            <div class="col s12 l3">
-                <h5><i class="fa fa-envelope" aria-hidden="true"></i> Email: </h5>
-                <p class="light"><a class="grey-text text-darken-2" href="mailto:info@crossfitberkana.com">info@crossfitberkana.com</a>
-                </p>
-                <br/>
-            </div>
-
-            <div class="col s12 l3">
-                <h5><i class="fa fa-location-arrow" aria-hidden="true"></i> Direccion: </h5>
-                <p class="light">Calle República Checa Nº7</p>
-                <p class="light">15707, Santiago de Compostela</p>
-
-                <br/>
-            </div>
-
-        </div>
-
         <div class="row">
-            <div class="col s12 center">
-                <a class="btn-large waves-effect waves-light teal accent-4"
-                   data-target="processModal">
-                    Envíanos un mensaje!</a>
+            <div class="col l4 s12">
+                <div class="col s12 ">
+                    <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Horario: </h5>
+                    <p class="light">Lunes a Viernes: 8:00 - 23:00</p>
+                    <p class="light">Sábado: 09:00 - 14:00 y de 17:00 a 20:00</p>
+                    <br>
+                    <a href="" class="grey-text text-darken-2" data-target="classModal">Ver horario de clases</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col s12">
+                    <h5><i class="fa fa-phone" aria-hidden="true"></i> Telefono: </h5>
+                    <p class="light"><a class="grey-text text-darken-2" href="tel:699016409">699 016 409</a></p>
+                    <br/>
+                </div>
+                <div class="col s12 ">
+                    <h5><i class="fa fa-envelope" aria-hidden="true"></i> Email: </h5>
+                    <p class="light"><a class="grey-text text-darken-2" href="mailto:info@crossfitberkana.com">info@crossfitberkana.com</a>
+                    </p>
+                    <br/>
+                </div>
+                <div class="col s12">
+                    <h5><i class="fa fa-location-arrow" aria-hidden="true"></i> Direccion: </h5>
+                    <p class="light">Calle República Checa Nº7</p>
+                    <p class="light">15707, Santiago de Compostela</p>
+
+                    <br/>
+                </div>
+            </div>
+
+            <div class="col s12 l8">
+                <div class="row">
+                    <form class="col s12" ng-submit="sendMail()">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_nombre" type="text" ng-model="name" required>
+                                <label for="icon_nombre">Nombre</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="fa fa-envelope prefix" aria-hidden="true"></i>
+                                <input id="icon_prefix" type="email" ng-model="email" required>
+                                <label for="icon_prefix">Email</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="fa fa-phone prefix" aria-hidden="true"></i>
+                                <input id="icon_telephone" type="tel" ng-model="phone" required>
+                                <label for="icon_telephone">Telefono</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="fa fa-comment prefix" aria-hidden="true"></i>
+                                <textarea id="textarea1" class="materialize-textarea" ng-model="msg"
+                                          placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="input-field col s12 center ">
+                                <p class="center text-darken-1 grey-text">Enviando este formulario acepto los <a href="#/lopd">términos y
+                                    condiciones</a> de tratamiento de mis datos personales.</p>
+                                <br>
+                            </div>
+                            <div class="input-field col s12 center ">
+                                <button class="waves waves-effect btn" type="submit" value="Submit"> Enviar mensaje
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-
-        <!--<div class="row">
-            <div class="col s12 center">
-                <h5>Escríbenos: </h5>
-            </div>
-        </div>
-
-        <div class="row">
-            <form class="col s12">
-
-                <div class="col l4 s12">
-                    <div class="input-field col s12">
-                        <input id="icon_nombre" type="text" ng-model="name">
-                        <label for="icon_nombre">Nombre</label>
-                    </div>
-
-                    <div class="input-field col s12">
-
-                        <input id="icon_prefix" type="email" ng-model="email">
-                        <label for="icon_prefix">Email</label>
-                    </div>
-
-                    <div class="input-field col s12">
-
-                        <input id="icon_telephone" type="tel" ng-model="phone">
-                        <label for="icon_telephone">Telefono</label>
-                    </div>
-                </div>
-
-                <div class="col l8 s12">
-                    <div class="input-field col s12">
-
-                        <textarea id="textarea1" class="materialize-textarea" ng-model="msg"></textarea>
-                        <label for="textarea1">Mensaje</label>
-                    </div>
-                </div>
-
-
-                <div class="input-field col s12 center ">
-                    <button class="waves waves-effect btn" type="submit" ng-click="sendMail()"> Enviar</button>
-                </div>
-
-            </form>
-
-        </div>
-    </div>-->
-
-        <!--</div>
-        </div>-->
 
     </div>
 
@@ -584,7 +543,7 @@
             </div>
             <div class="col s6 right">
                 <a class="grey-text text-lighten-1" href="https://twitter.com/Yagouus"> Designed with <i
-                        class="tiny material-icons">favorite</i> by Yagouus  </a>
+                        class="tiny material-icons">favorite</i> by Yagouus </a>
             </div>
 
 
@@ -594,58 +553,52 @@
 
 
 <!--Modals-->
-<!--Type sentences form-->
+<!--Contacto-->
 <div id="processModal" class="modal">
-
     <div class="modal-content">
         <div class="col s12 l8">
             <br>
             <h5>Escríbenos: </h5>
             <div class="row">
-                <form class="col s12">
+                <form class="col s12" ng-submit="sendMail()">
                     <div class="row">
-
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_nombre" type="text" ng-model="name">
+                            <input id="icon_nombre" type="text" ng-model="name" required>
                             <label for="icon_nombre">Nombre</label>
                         </div>
-
                         <div class="input-field col s12">
                             <i class="fa fa-envelope prefix" aria-hidden="true"></i>
-                            <input id="icon_prefix" type="email" ng-model="email">
+                            <input id="icon_prefix" type="email" ng-model="email" required>
                             <label for="icon_prefix">Email</label>
                         </div>
-
                         <div class="input-field col s12">
                             <i class="fa fa-phone prefix" aria-hidden="true"></i>
-                            <input id="icon_telephone" type="tel" ng-model="phone">
+                            <input id="icon_telephone" type="tel" ng-model="phone" required>
                             <label for="icon_telephone">Telefono</label>
                         </div>
-
                         <div class="input-field col s12">
                             <i class="fa fa-comment prefix" aria-hidden="true"></i>
                             <textarea id="textarea1" class="materialize-textarea" ng-model="msg"
-                                      placeholder="Mensaje"></textarea>
+                                      placeholder="Mensaje" required></textarea>
                         </div>
-
                         <div class="input-field col s12 center ">
-                            <button class="waves waves-effect btn" type="submit" ng-click="sendMail()"> Enviar
+                            <button class="waves waves-effect btn" type="submit" value="Submit"> Enviar
                             </button>
+                        </div>
+                        <div class="input-field col s12 center ">
+                            <label>Enviando este formulario acepto los <a href="#/lopd">términos y
+                                condiciones</a> de tratamiento de mis datos personales.</label>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
 </div>
 
-<!--Modals-->
-<!--Type sentences form-->
+<!--Horario-->
 <div id="classModal" class="modal">
-
     <div class="modal-content">
         <div class="col s12 l8">
             <div class="row">
@@ -662,7 +615,6 @@
 
                     </tr>
                     </thead>
-
                     <tbody>
                     <tr>
                         <td>08:00</td>
@@ -759,6 +711,4 @@
             </div>
         </div>
     </div>
-
-
 </div>

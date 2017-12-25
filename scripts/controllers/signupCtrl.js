@@ -18,8 +18,6 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
 
     $scope.sendMail = function () {
 
-
-
         $('#processModal').modal('close');
 
         var config = {
