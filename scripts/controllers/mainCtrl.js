@@ -49,7 +49,11 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
         $location.hash('contact');
         console.log($location.hash());
         $anchorScroll();
-    }
+    };
+
+    setTimeout(function(){  $('#modal1').modal('open'); }, 3000);
+
+
 
 
 }]);
