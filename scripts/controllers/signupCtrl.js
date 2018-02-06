@@ -54,6 +54,8 @@ angular.module("project").controller("signupCtrl", ["$scope", "$http", "$locatio
         $scope.msg = message;
         $('#processModal').modal('open');
     }
+    
+    setTimeout(function(){  $('#modal1').modal('open'); }, 3000);
 
 
 }]);
