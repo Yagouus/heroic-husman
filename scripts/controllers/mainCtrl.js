@@ -51,7 +51,7 @@ angular.module("project").controller("mainCtrl", ["$scope", "$http", "$location"
         $anchorScroll();
     };
 
-    setTimeout(function(){  $('#modal1').modal('open'); }, 3000);
+    //setTimeout(function(){  $('#modal1').modal('open'); }, 3000);
 
 
 
